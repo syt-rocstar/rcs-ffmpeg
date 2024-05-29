@@ -1,4 +1,4 @@
-# Rocstar custom ffmpeg docker image
+# Custom Rocstar ffmpeg docker image
 
 ## Usage
 
@@ -32,6 +32,7 @@ FFMPEG_CLI={{ ffmpeg parameters to run }}
 ### Run container
 
 `/PATH`
+
 ```bash
 docker-compose -f docker-compose.yml up -d
 ```
