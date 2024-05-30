@@ -9,22 +9,21 @@ env:
 jobs:
   buildx:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@main
-
-      - name: Login to GHCR
-        uses: docker/login-action@v2
+      - 
+        uses: actions/checkout@main
+      - 
+        name: Login to GHCR
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push
+          password: ${{ secrets.GHCR_TOKEN }}
+      - 
+        name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           file: ./context/Dockerfile
           push: true
-          tags: ${{ env.TAG }}
-          
+          tags: ${{ env.TAG }}        
