@@ -4,7 +4,7 @@ on:
   push:
     
 env:
-  TAG: syt-rocstar/rcs-ffmpeg:bookworm
+  TAG: syt-rocstar/rcs-ffmpeg:latest
   
 jobs:
   buildx:

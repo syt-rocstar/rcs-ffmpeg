@@ -5,6 +5,6 @@ ENV LANG=C.UTF-8
 
 RUN apt update && \
     apt install -y \
-    ffmpeg
+    ffmpeg curl
     
 ENTRYPOINT ["ffmpeg", "-version"]
