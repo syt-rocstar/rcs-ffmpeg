@@ -5,7 +5,7 @@
 ### Pull image
 
 ```bash
-docker pull ghcr.io/syt-rocstar/rcs-ffmpeg:bookworm
+docker pull ghcr.io/syt-rocstar/rcs-ffmpeg:latest
 ```
 
 ### Create Docker compose file (example)
@@ -15,7 +15,7 @@ docker pull ghcr.io/syt-rocstar/rcs-ffmpeg:bookworm
 ```
 services:
   rcs-ffmpeg:
-    image: rcs-ffmpeg:bookworm
+    image: rcs-ffmpeg:latest
     env_file: ./.env
     entrypoint: ${FFMPEG_CLI}
     restart: unless-stopped
