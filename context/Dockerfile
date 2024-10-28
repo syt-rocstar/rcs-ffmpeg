@@ -7,4 +7,4 @@ RUN apt update && \
     apt install -y \
     ffmpeg curl
     
-ENTRYPOINT ["ffmpeg", "-version"]
+# ENTRYPOINT ["ffmpeg", "-version"]
